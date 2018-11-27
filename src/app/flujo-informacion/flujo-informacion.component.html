@@ -1,0 +1,22 @@
+<h2>{{ title }}</h2>
+<img src="../../assets/img/flujo informacion angular.png" alt="Imagen">
+
+<h3>Expresiones (Corchetes)</h3>
+<ul>
+  <li>Sirven para acceder al valor de las varibles</li>
+  <li>También permite expresiones entre corchetes 1 + 1 = {{1+1}}</li>
+</ul>
+
+<h3>Eventos</h3>
+<button (click)="showHide()" id="btnMostrar">{{ txtBoton }}</button>
+<p [hidden]="!visible">Adiós</p>
+
+<h3>Doble Binding (Banana in a Box)</h3>
+<p>NOTA:<br>Ten muy en cuenta que para poder usar ngModel necesitas importar un módulo
+adicional, disponible mediante el propio Angular, pero que no viene cargado por defecto. Esto ocurre
+desde Angular 4. Ahora, cuando quieras usar la directiva ngModel tendrás que hacer el import de
+FormsModule.
+<code>import FormsModule from '@angular/forms'</code>
+</p>
+<input type="text" [(ngModel)]="nombre">
+<p>Nombre: {{ nombre }}</p>
