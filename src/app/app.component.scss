@@ -1,3 +1,14 @@
+* {
+    margin: 0;
+}
 h1 {
     color: red;
+}
+
+.router-link-active {
+    border-left: 5px solid #0000FF;
+}
+
+.dropdown {
+    background-color: #FFF !important;
 }
