@@ -9,13 +9,17 @@ import { FlujoInformacionComponent } from './componentes/flujo-informacion/flujo
 import { DetalleComponent } from './componentes/videojuego/detalle/detalle.component';
 import { PipeComponent } from './componentes/pipe/pipe.component';
 import { PersonasComponent } from './componentes/personas/personas.component';
+import { ArraysComponent } from './componentes/arrays/arrays.component';
+import { FrutaComparadorComponent } from './componentes/fruta-comparador/fruta-comparador.component';
 
 
 const routes: Routes = [
   { path: 'home', component : HomeComponent },
   { path: 'fruta', component : FrutaComponent },
+  { path: 'comparador', component : FrutaComparadorComponent },
   { path: 'alumnos', component : AlumnosComponent },
   { path: 'flujo', component : FlujoInformacionComponent },
+  { path: 'arrays', component : ArraysComponent },
   { path: 'videojuego-detalle', component : DetalleComponent },
   { path: 'pipe', component : PipeComponent },
   { path: 'personas', component : PersonasComponent },

@@ -1,30 +1,55 @@
 <!--The content below is only a placeholder and can be replaced.-->
-
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Angular</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Page 1-1</a></li>
+                    <li><a href="#">Page 1-2</a></li>
+                    <li><a href="#">Page 1-3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+        </ul>
+    </div>
+</nav>
 <!-- As a link -->
 <nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" [routerLink]="['/home']" routerLinkActive="router-link-active" >Inicio</a>
+    <a class="navbar-brand" [routerLink]="['/home']" routerLinkActive="router-link-active">Inicio</a>
 
-  <div class="dropdown">
-      <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Componentes
-      </a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" [routerLink]="['/fruta']" routerLinkActive="router-link-active" >Frutas</a>
-        <a class="dropdown-item" [routerLink]="['/alumnos']" routerLinkActive="router-link-active" >Alumnos</a>
-        <a class="dropdown-item" [routerLink]="['/videojuego-detalle']" routerLinkActive="router-link-active" >Videojuegos</a>
-        <a class="dropdown-item" [routerLink]="['/personas']" routerLinkActive="router-link-active" >Personas</a>
-      </div>
-  </div>
-  
-  <div class="dropdown">
-      <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Documentación
-      </a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" [routerLink]="['/flujo']" routerLinkActive="router-link-active" >Flujo Información</a>
-        <a class="dropdown-item" [routerLink]="['/pipe']" routerLinkActive="router-link-active" >Pipes</a>
-      </div>
-  </div>
+    <div class="dropdown">
+        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Componentes
+        </a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" [routerLink]="['/fruta']" routerLinkActive="router-link-active">Frutas</a>
+            <a class="dropdown-item" [routerLink]="['/arrays']" routerLinkActive="router-link-active">Frutas II: Arrays</a>
+            <a class="dropdown-item" [routerLink]="['/comparador']" routerLinkActive="router-link-active">Frutas III:
+                Comparador</a>
+            <a class="dropdown-item" [routerLink]="['/alumnos']" routerLinkActive="router-link-active">Alumnos</a>
+            <a class="dropdown-item" [routerLink]="['/videojuego-detalle']" routerLinkActive="router-link-active">Videojuegos</a>
+            <a class="dropdown-item" [routerLink]="['/personas']" routerLinkActive="router-link-active">Personas</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Documentación
+        </a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" [routerLink]="['/flujo']" routerLinkActive="router-link-active">Flujo Información</a>
+            <a class="dropdown-item" [routerLink]="['/pipe']" routerLinkActive="router-link-active">Pipes</a>
+        </div>
+    </div>
 </nav>
 
 

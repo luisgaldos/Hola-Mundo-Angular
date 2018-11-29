@@ -10,6 +10,7 @@ export class FrutaComponent implements OnInit {
   // Declaración de Atributos
   title: string;
   frutas: string[];
+  
 
 
   constructor() { 
@@ -17,13 +18,17 @@ export class FrutaComponent implements OnInit {
     console.trace('FrutaComponent Constructor.');
     this.title = 'Fruta';
     this.frutas = ['Fresa', 'Plátano', 'Mango', 'Kiwi'];
+   
 
   }
 
   ngOnInit() {
 
     console.trace('FrutaComponent OnInit.');
-
+   
   }
+ 
+
+
 
 }

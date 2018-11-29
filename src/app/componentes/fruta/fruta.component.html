@@ -1,8 +1,22 @@
-<h2>Nuestro primer componente !{{ title }}!</h2>
-<p>
-  Componente generado con el comando:
-</p>
-<code>ng (g)enerate (c)omponent {{ title }}</code>
-<ol>
-  <li *ngFor="let f of frutas">{{f}}</li>
-</ol>
+<div class="row">
+  <div class="col">
+    <h2>Primer componente: {{ title | titlecase }}</h2>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-2">
+    <p>
+      Componente generado con el comando:
+    </p>
+  </div>
+  <div class="col-2">
+    <code>ng (g)enerate (c)omponent {{ title }}</code>
+  </div>
+  <div class="col">
+    <ol>
+      <li *ngFor="let f of frutas">{{ f }}</li>
+    </ol>
+  </div>
+</div>
+
